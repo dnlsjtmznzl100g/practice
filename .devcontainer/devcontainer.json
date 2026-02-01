@@ -1,0 +1,15 @@
+{
+    "name": "Godot Engine Environment",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/devcontainers/features/node-js:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "geequlim.godot-tools" // 고도 개발 필수 확장 프로그램
+            ]
+        }
+    },
+    "postCreateCommand": "npm install -g serve" // 웹 에디터 실행을 위한 도구 설치
+}
